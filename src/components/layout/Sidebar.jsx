@@ -1,6 +1,7 @@
 import React from 'react';
 import { X, Wallet, Search, Trash2 } from 'lucide-react';
 import { getPriceColor } from '../../utils/formatters';
+import PsxLogo from '../common/PsxLogo';
 
 export default function Sidebar({
   isSidebarOpen,
@@ -32,7 +33,9 @@ export default function Sidebar({
       <aside className={`sidebar ${isSidebarOpen ? 'open' : ''}`}>
         <div className="sidebar-header">
           <div className="sidebar-brand">
-            <div className="sidebar-logo">P</div>
+            <div className="sidebar-logo">
+              <PsxLogo size={34} />
+            </div>
             <h1 className="sidebar-title">PSX Watch</h1>
           </div>
           <button 

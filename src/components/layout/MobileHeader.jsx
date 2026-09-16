@@ -1,6 +1,7 @@
 import React from 'react';
 import { Menu, Layers } from 'lucide-react';
 import { getPriceColor } from '../../utils/formatters';
+import PsxLogo from '../common/PsxLogo';
 
 export default function MobileHeader({
   activeTab,
@@ -22,7 +23,9 @@ export default function MobileHeader({
       </button>
       
       <div className="mobile-brand">
-        <div className="mobile-logo">{activeTab === 'portfolio' ? '💼' : 'P'}</div>
+        <div className={`mobile-logo ${activeTab !== 'portfolio' ? 'has-psx-logo' : ''}`}>
+          {activeTab === 'portfolio' ? '💼' : <PsxLogo size={28} />}
+        </div>
         <span className="mobile-title">{activeTab === 'portfolio' ? portfolioName : selectedSymbol}</span>
         {activeTab !== 'portfolio' && stockDetails && (
           <span className={`mobile-price-chip ${getPriceColor(stockDetails.change)}`}>

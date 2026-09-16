@@ -175,6 +175,11 @@ html, body {
   box-shadow: 0 2px 6px rgba(16, 185, 129, 0.35);
 }
 
+.mobile-logo.has-psx-logo {
+  background: transparent;
+  box-shadow: none;
+}
+
 .mobile-title {
   font-size: 0.95rem;
   font-weight: 800;
@@ -259,18 +264,20 @@ html, body {
 }
 
 .sidebar-logo {
-  width: 34px;
-  height: 34px;
-  background: linear-gradient(135deg, #10b981, #0284c7);
-  border-radius: 9px;
+  width: 36px;
+  height: 36px;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-weight: 800;
-  color: #ffffff;
-  font-size: 1.15rem;
-  box-shadow: 0 3px 10px rgba(16, 185, 129, 0.4);
   flex-shrink: 0;
+  border-radius: 9px;
+  box-shadow: 0 3px 12px rgba(16, 185, 129, 0.25);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.sidebar-logo:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 5px 16px rgba(16, 185, 129, 0.35);
 }
 
 .sidebar-title {
