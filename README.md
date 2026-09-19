@@ -48,4 +48,4 @@ Node.js 18+
 
 ## License
 
-MIT\n
+MIT
