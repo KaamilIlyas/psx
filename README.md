@@ -2,6 +2,8 @@
 
 A portfolio tracker and analytics dashboard for the Pakistan Stock Exchange (PSX). Tracks multi-tranche purchase lots, calculates realized and unrealized P&L via FIFO liquidation, logs dividend income with tax withholding tiers, and scrapes live market data and financial statements.
 
+**Live Demo:** [https://psx-portal.vercel.app](https://psx-portal.vercel.app/)
+
 ## Features
 
 - **Portfolio Tracking**: Buy lot tracking with individual purchase dates and prices, weighted average cost basis, and FIFO sell deductions.
